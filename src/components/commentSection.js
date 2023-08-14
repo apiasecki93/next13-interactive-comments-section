@@ -118,10 +118,10 @@ export default function CommentSection() {
   let currentUser = data.currentUser;
 
   return (
-    <div id="mainContainer" className="flex relative">
+    <div id="mainContainer" className="flex relative mmin:items-center mmin:justify-center mmin:mt-[50px]">
       {showDeleteModal && <ModuleDelete className="" hideModal={hideDeleteModal} confirmDelete={deleteComment}/>}
-      <div id="threeSections" className="flex flex-col pb-10">
-        <div id="theirStaticComments" className="flex flex-col">
+      <div id="threeSections" className="flex flex-col pb-10 mmin:items-start mmin:justify-center ">
+        <div id="theirStaticComments" className="flex flex-col mmin:items-start mmin:justify-center ">
           <AmyAndMaxComponent amyRobsonData={amyRobsonData} maxBlagunData={maxBlagunData} />
         </div>
         <RamsesCard ramsesMironData={ramsesMironData}/>

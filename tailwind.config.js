@@ -25,7 +25,7 @@ module.exports = {
       },
       screens: {
         ssm: { max: "375px" },
-        mmin: { min: "1440px" },
+        mmin: { min: "376px" },
       },
     },
   },

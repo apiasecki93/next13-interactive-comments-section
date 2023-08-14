@@ -74,8 +74,8 @@ const AmyAndMaxComponent = ({ amyRobsonData, maxBlagunData }) => {
     };
 
     return (
-        <React.Fragment>
-            <div id="staticCommentsCard" className="flex flex-col bg-whitee rounded-md ssm:p-4 ssm:mx-4 ssm:mt-4">
+        <React.Fragment className="mmin:justify-center mmin:items-center">
+            <div id="staticCommentsCard" className="flex flex-col bg-whitee rounded-md p-4 mx-4 mt-4 mmin:w-[702px]">
                 <div id="seg1" className="flex flex-row  items-center space-x-3 ssm:pb-3">
                     <Image src="/images/avatars/image-amyrobson.png" alt="image" width="30" height="30" />
                     <div id="title" className="font-bold text-darkBluee">
@@ -104,7 +104,7 @@ const AmyAndMaxComponent = ({ amyRobsonData, maxBlagunData }) => {
             {amyReplies.map((comment) => (
                 <DynamicComment key={comment.id} comment={comment} />
             ))}
-            <div id="staticCommentsCard" className="flex flex-col bg-whitee rounded-md ssm:p-4 ssm:mx-4 ssm:mt-4">
+            <div id="staticCommentsCard" className="flex flex-col bg-whitee rounded-md p-4 mx-4 mt-4 mmin:w-[702px]">
                 <div id="seg1" className="flex flex-row  items-center space-x-3 ssm:pb-3">
                     <Image src="/images/avatars/image-maxblagun.png" alt="image" width="30" height="30" />
                     <div id="title" className="font-bold text-darkBluee">{maxBlagunData.user.username}</div>

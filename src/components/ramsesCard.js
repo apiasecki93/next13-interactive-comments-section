@@ -56,7 +56,7 @@ const RamsesCard = ({ ramsesMironData }) => {
                 <div className="flex-grow">
                     <hr className="h-full ml-5 mt-3  p-[2px] bg-lightGrayBlue" />
                 </div>
-                <div id="staticReplyCardRamses" className="flex flex-col bg-whitee rounded-md ssm:p-4 ssm:mx-4 ssm:mt-4">
+                <div id="staticReplyCardRamses" className="flex flex-col bg-whitee rounded-md p-4 mx-4 mt-4 mmin:w-[680px]">
                     <div id="seg1" className="flex flex-row  items-center space-x-3 ssm:pb-3">
                         <Image src="/images/avatars/image-ramsesmiron.png" alt="image" width="30" height="30" />
                         <div id="title" className="font-bold text-darkBluee">

@@ -32,7 +32,7 @@ const JuliusReplayToDeleteCard = ({ juliuSomoData }) => {
                     <div className="flex-grow">
                         <hr className="h-full ml-5 mt-3  p-[2px] bg-lightGrayBlue" />
                     </div>
-                    <div id="staticReplyCardJulius" className="flex flex-col bg-whitee rounded-md ssm:p-4 ssm:mx-4 ssm:mt-4">
+                    <div id="staticReplyCardJulius" className="flex flex-col bg-whitee rounded-md p-4 mx-4 mt-4 mmin:w-[680px]">
                         <div id="seg1" className="flex flex-row  items-center space-x-3 ssm:pb-3">
                             <Image src="/images/avatars/image-juliusomo.png" alt="image" width="30" height="30" />
                             <div id="title" className="font-bold text-darkBluee">{juliuSomoData.user.username}</div>
@@ -60,7 +60,7 @@ const JuliusReplayToDeleteCard = ({ juliuSomoData }) => {
                                 <div className="text-moderateBlue">{juliuSomoScore ? juliuSomoScore : juliuSomoData.score}</div>
                                 <Image src="/images/icon-minus.svg" alt="image" width="20" height="20" onClick={() => handleSubtractScore("juliuSomo")} />
                             </div>
-                            <div id="deleteStaticComment" className="flex flex-row mt-4 items-center space-x-2 delete-button cursor-pointer">
+                            <div id="deleteStaticComment" className="flex flex-row mt-4 items-center space-x-2 delete-button cursor-pointer ">
                                 <Image src="/images/icon-delete.svg" alt="image" width="20" height="20" className="delete-button" />
                                 <div className="text-softRed font-semibold delete-button">Delete</div>
                             </div>

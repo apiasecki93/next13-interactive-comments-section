@@ -43,11 +43,11 @@ const DynamicComment = ({ comment, replayA }) => {
             <div id={`comment-container-${comment.id}`} className="flex flex-row">
                 {replay && (
                     <div style={{ width: '20px' }}>
-                        <hr className="h-full ml-5 mt-3 p-[2px] bg-lightGrayBlue" />
+                        <hr className="h-full ml-5 mt-3 p-[2px] bg-lightGrayBlue " />
                     </div>
                 )}
                 
-                <div className="toDelete flex flex-col bg-white rounded-md p-4 mx-4 mt-4 max-w-xl w-[342px]">
+                <div className={`toDelete flex flex-col bg-white rounded-md p-4 mx-4 mt-4 ssm:max-w-xl w-[342px] ${replay ? 'mmin:w-[682px]' : 'mmin:w-[702px]'}`}>
                     <div className="flex flex-row items-center space-x-3 pb-3">
                         <Image src={comment.user.image} alt="avatar" width="30" height="30" />
                         <div className="font-bold text-darkBlue">{comment.user.username}</div>
