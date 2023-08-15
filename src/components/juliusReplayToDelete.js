@@ -54,27 +54,31 @@ const JuliusReplayToDeleteCard = ({ juliuSomoData }) => {
                                 </div>
                             )}
                         </div>
-                        <div id="seg3" className="flex flex-row justify-between">
-                            <div id="LikesSection" className="flex flex-row items-center p-2 mt-3 bg-verylightGray rounded-md space-x-2">
-                                <Image src="/images/icon-plus.svg" alt="image" width="20" height="20" onClick={() => handleAddScore("juliuSomo")} />
+                        <div id="seg3" className="flex flex-row justify-between  ">
+                            <div id="LikesSection" className="flex flex-row items-center p-2 mt-3 bg-verylightGray rounded-md space-x-2 ">
+                                <Image className="cursor-pointer" src="/images/icon-plus.svg" alt="image" width="20" height="20" onClick={() => handleAddScore("juliuSomo")} />
                                 <div className="text-moderateBlue">{juliuSomoScore ? juliuSomoScore : juliuSomoData.score}</div>
-                                <Image src="/images/icon-minus.svg" alt="image" width="20" height="20" onClick={() => handleSubtractScore("juliuSomo")} />
+                                <Image className="cursor-pointer" src="/images/icon-minus.svg" alt="image" width="20" height="20" onClick={() => handleSubtractScore("juliuSomo")} />
                             </div>
-                            <div id="deleteStaticComment" className="flex flex-row mt-4 items-center space-x-2 delete-button cursor-pointer ">
-                                <Image src="/images/icon-delete.svg" alt="image" width="20" height="20" className="delete-button" />
+                            <div className="flex mmin:ml-[430px] mmin:space-x-4 space-x-4">
+
+                            
+                            <div id="deleteStaticComment" className="flex flex-row mt-4 items-center space-x-2 delete-button cursor-pointer">
+                                <Image  src="/images/icon-delete.svg" alt="image" width="20" height="20" className="delete-button cursor-pointer" />
                                 <div className="text-softRed font-semibold delete-button">Delete</div>
                             </div>
                             {isEditing ? (
-                                <div className="flex flex-row mt-4 items-center space-x-1">
-                                    <Image src="/images/icon-update.svg" alt="image" width="20" height="20" onClick={handleUpdate} />
+                                <div className="flex flex-row mt-4 items-center space-x-1 cursor-pointer">
+                                    <Image  src="/images/icon-update.svg" alt="image" width="20" height="20" onClick={handleUpdate} />
                                     <div className="text-moderateBlue font-semibold" onClick={handleUpdate}>Update</div>
                                 </div>
                             ) : (
-                                <div className="flex flex-row mt-4 items-center space-x-2 edit-button">
-                                    <Image src="/images/icon-edit.svg" alt="image" width="20" height="20" onClick={handleEdit} />
+                                <div className="flex flex-row mt-4 items-center space-x-2 edit-button cursor-pointer">
+                                    <Image  src="/images/icon-edit.svg" alt="image" width="20" height="20" onClick={handleEdit} />
                                     <div className="text-moderateBlue font-semibold" onClick={handleEdit}>Edit</div>
                                 </div>
                             )}
+                            </div>
                         </div>
                     </div>
                 </div>

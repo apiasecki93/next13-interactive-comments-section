@@ -76,6 +76,7 @@ const DynamicComment = ({ comment, replayA }) => {
                                 <Image src="/images/icon-minus.svg" alt="minus-icon" width="20" height="20" />
                             </div>
                         </div>
+                        <div className="flex mmin:ml-[430px] mmin:space-x-4 space-x-4">
                         <div className="flex flex-row mt-4 items-center space-x-2 delete-button cursor-pointer" onClick={handleDelete}>
                             <Image src="/images/icon-delete.svg" alt="delete-icon" width="20" height="20" />
                             <div className="text-softRed font-semibold ">Delete</div>
@@ -91,6 +92,7 @@ const DynamicComment = ({ comment, replayA }) => {
                                 <div className="text-moderateBlue font-semibold">Edit</div>
                             </div>
                         )}
+                        </div>
                     </div>
                 </div>
             </div>
